@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<!--
+  Soori Bali — helicopter guest page DRAFT (white-label: operator name at 0 occurrences, PJV pattern)
+  ----------------------------------------------------
+  INTERNAL DRAFT. No partnership agreement is recorded in the vault.
+  Every rate, duration and route on this page comes from ONE source:
+  "Soori Heli Tour Catalog - September 9, 2026.pdf" (this work-stream folder).
+  Nothing else is priced here, and no rate has been invented.
+
+  Before this is shown externally or deployed, resolve section 7 of
+  1.projects/1.2.helicopter.services/1.2.19.soori_landing_page/Soori Landing Page.md
+  — starting with 7.2 (what is the landing-fee arrangement, who is the Soori
+  contact, and has the resort consented to this page?) and 7.1 (who operates
+  the "Sky Tour" their own site sells today?).
+
+  Design: sooribali.com DESIGN.md (sage / charcoal / bone / stone, serif headings, square, no shadows).
+  Imagery: catalogue-extracted photos + operator stock + the series hero video.
+  Nothing from sooribali.com is used. No Soori logo — typographic wordmark only.
+
+  Draft bar removed by owner instruction 2026-09-14; the noindex meta above is
+  the remaining containment and stays until section 7.2 closes.
+-->
+<html lang="en" class="no-js">
+<head>
+
+<script>document.documentElement.className='js';</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Soori Bali — Helicopter Tours &amp; Transfers</title>
+<meta name="description" content="Private helicopter scenic flights and transfers departing Soori on Bali's Tabanan coast — four signature routes, eleven transfer routes and a VIP airport transfer, departing directly from the resort's own lawn above Kelating Beach." />
+<link rel="alternate" hreflang="en" href="index.html" />
+<link rel="alternate" hreflang="zh-CN" href="index-zh.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   Design system: "sooribali.com DESIGN.md" (this work-stream folder),
+   extracted from the live Soori site on 2026-09-15.
+   Fonts: Soori uses FreightText Pro / FreightSans Pro (Adobe Fonts, licensed).
+   Substitutes here: Cormorant Garamond (serif) + Source Sans 3 (sans).
+   Rules: one sage accent, charcoal at 80 % for copy, square corners,
+   no shadows, 300-500 ms colour fades only, 40 x 1 px hairline dividers.
+   ============================================================ */
+:root{
+  --sage:#a7aca2;
+  --sage-hover:#b9bab5;
+  --sage-deep:#889590;
+  --charcoal:#58585b;
+  --text:rgba(88,88,91,.8);
+  --text-soft:rgba(88,88,91,.7);
+  --bone:#fcfbf9;
+  --stone:#edecea;
+  --tint:#f1f1f1;
+  --hairline:#e4e4e4;
+  --hairline-a:rgba(0,0,0,.1);
+  --btn-border:rgba(88,88,91,.5);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
+  --maxw:1200px;
+  --t-btn:background-color .5s ease,color .5s ease,border-color .5s ease;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);
+  color:var(--charcoal);background:#fff;line-height:1.6;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:var(--sage);text-decoration:none;transition:color .3s ease}
+p{color:var(--text)}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--sage);font-weight:500;line-height:1.15;letter-spacing:0}
+::selection{background:var(--sage);color:#fff}
+:focus-visible{outline:1px solid var(--sage);outline-offset:3px}
+
+.container{width:min(var(--maxw),calc(100% - 30px));margin-inline:auto}
+.section{padding:120px 0}
+.section--soft{background:var(--bone)}
+.eyebrow{display:block;font-family:var(--serif);font-size:15px;font-weight:600;line-height:1;color:var(--sage);margin-bottom:14px}
+h2.title{font-size:39px;line-height:45px;margin-bottom:0}
+h2.title::after{content:"";display:block;width:40px;height:1px;background:var(--sage);margin:20px auto}
+.lead{font-size:17px;max-width:811px;color:var(--text)}
+.center{text-align:center}
+.center .lead{margin-inline:auto}
+
+/* ---------- NAV (white bar, hairline cells, filled sage Book Now) ---------- */
+header.nav{position:sticky;top:0;left:0;right:0;z-index:100;background:#fff;border-bottom:1px solid var(--hairline-a)}
+.nav-inner{display:flex;align-items:stretch;height:85px;gap:0}
+.lockup{display:flex;align-items:center;padding-right:28px;border-right:1px solid var(--hairline-a);min-width:0}
+.lockup .partner{display:flex;flex-direction:column;line-height:1;min-width:0}
+.lockup .partner .n{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:.22em;color:var(--sage);white-space:nowrap}
+.lockup .partner .s{font-size:10px;font-weight:500;letter-spacing:.3em;color:var(--text);margin-top:5px;white-space:nowrap;text-transform:uppercase}
+nav.links{display:flex;align-items:center;justify-content:center;flex:1;gap:0}
+nav.links a{font-size:17px;letter-spacing:.01em;color:var(--sage);padding:0 14px;line-height:85px;transition:color .5s ease}
+nav.links a:hover{color:#000}
+.lang-switch{display:flex;align-items:center;padding:0 18px;border-left:1px solid var(--hairline-a);border-right:1px solid var(--hairline-a);font-size:16px;letter-spacing:.01em;color:var(--sage);transition:background-color .3s ease;white-space:nowrap}
+.lang-switch:hover{background:var(--tint)}
+.nav-cta{display:flex;align-items:center;justify-content:center;align-self:center;width:153px;height:44px;margin-left:22px;background:var(--sage);color:#fff;font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:background-color .3s ease;white-space:nowrap}
+.nav-cta:hover{background:var(--sage-hover)}
+.burger{display:none;flex-direction:column;justify-content:center;gap:6px;cursor:pointer;padding:6px;background:none;border:0;margin-left:14px}
+.burger span{width:26px;height:1px;background:var(--sage);display:block}
+
+/* ---------- HERO (video, centred caption, white hairline, ghost buttons) ---------- */
+.hero{position:relative;min-height:calc(100vh - 85px);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:var(--charcoal) url('images/hero-poster.jpg') center 42%/cover no-repeat}
+.hero-bg img,.hero-bg video{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-bg video{opacity:0;transition:opacity .6s ease}
+.hero-bg video.ready{opacity:1}
+.hero-bg .hero-fallback{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+@media (prefers-reduced-motion:reduce){.hero-bg video{display:none}.hero-bg .hero-fallback{display:block}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(0,0,0,.22)}
+.hero-inner{width:auto;max-width:850px;padding:100px 20px 90px}
+.hero .kicker{font-family:var(--serif);font-size:16px;line-height:16px;font-weight:500;color:#fff;margin-bottom:22px}
+.hero .kicker b{color:#fff;font-weight:500}
+.hero h1{color:#fff;font-size:clamp(26px,3.6vw,44px);line-height:1.35;font-weight:500;text-transform:uppercase;letter-spacing:.04em;max-width:none}
+.hero h1::after{content:"";display:block;width:40px;height:1px;background:#fff;margin:22px auto}
+.hero p.sub{max-width:56ch;margin:0 auto 28px;font-size:17px;color:rgba(255,255,255,.92)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:150px;height:47px;padding:0 25px;border:1px solid #fff;background:transparent;color:#fff;font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:var(--t-btn);cursor:pointer;white-space:nowrap}
+.btn:hover{background:#fff;color:var(--sage)}
+.btn svg{display:none}
+.scroll-hint{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;font-family:var(--serif);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:opacity .3s ease}
+.scroll-hint .mouse{width:14px;height:14px;border-right:1px solid #fff;border-bottom:1px solid #fff;transform:rotate(45deg);margin-bottom:6px}
+.scroll-hint:hover{opacity:.5}
+
+/* ---------- PILL STRIP (stone band, hairline cells) ---------- */
+.pills{background:var(--stone)}
+.pills .container{display:grid;grid-template-columns:repeat(5,1fr);gap:0;padding:0}
+.pill{text-align:center;padding:28px 16px;font-size:15px;color:var(--text);line-height:1.5}
+.pill+.pill{border-left:1px solid var(--hairline-a)}
+.pill b{display:block;font-family:var(--serif);font-size:20px;font-weight:500;color:var(--sage);margin-bottom:2px}
+
+/* ---------- TOURS (catalogue slides, Ulaman pattern) ---------- */
+.tours-slides{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:30px;margin-top:50px;max-width:1000px;margin-inline:auto}
+.tour-slide{background:#fff;border:1px solid var(--hairline);display:flex;flex-direction:column;align-items:center;padding-bottom:26px}
+.tour-slide img{width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity .3s ease}
+.tour-slide img:hover{opacity:.85}
+.tour-slide .tour-cta{margin:22px 0 0}
+.tour-cta{display:inline-flex;align-items:center;justify-content:center;width:230px;height:47px;border:1px solid var(--btn-border);color:var(--charcoal);font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:var(--t-btn);white-space:nowrap}
+.tour-cta:hover{background:var(--sage-hover);border-color:var(--sage-hover);color:#fff}
+.tour-cta svg{display:none}
+.tours-note{max-width:760px;margin:30px auto 0;text-align:center;font-size:15px}
+
+/* ---------- ROUTE-MAP LIGHTBOX ---------- */
+.lb{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.9);display:none;overflow:auto;padding:38px 16px;-webkit-overflow-scrolling:touch}
+.lb.open{display:block}
+.lb img{display:block;width:min(760px,94vw);height:auto;margin:0 auto}
+.lb-close{position:fixed;top:16px;right:20px;z-index:301;background:transparent;border:1px solid #fff;color:#fff;width:42px;height:42px;font-size:22px;cursor:pointer;line-height:1;transition:var(--t-btn)}
+.lb-close:hover{background:#fff;color:var(--sage)}
+body.lb-lock{overflow:hidden}
+
+/* ---------- TRANSFER TABLE ---------- */
+.tf-wrap{margin-top:48px;background:#fff;border:1px solid var(--hairline)}
+.tf-scroll{overflow-x:auto}
+table.tf{width:100%;border-collapse:collapse;min-width:520px}
+table.tf caption{text-align:left;padding:22px 26px 6px;font-family:var(--serif);font-size:20px;font-weight:500;color:var(--sage)}
+table.tf th{text-align:left;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--text);font-weight:500;padding:14px 26px 10px;border-bottom:1px solid var(--hairline);white-space:nowrap}
+table.tf th.r,table.tf td.r{text-align:right}
+table.tf td{padding:14px 26px;border-bottom:1px solid var(--hairline);font-size:16px;color:var(--text);vertical-align:top}
+table.tf tr:last-child td{border-bottom:0}
+table.tf tbody tr{transition:background-color .3s ease}
+table.tf tbody tr:hover{background:var(--tint)}
+table.tf td.route{color:var(--charcoal)}
+table.tf td.route small{display:block;font-size:13px;color:var(--text-soft);margin-top:2px}
+table.tf td.time{white-space:nowrap}
+table.tf td.rate{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--charcoal);white-space:nowrap}
+.tf-airport{border-top:1px solid var(--hairline);background:var(--bone)}
+
+/* ---------- AIRPORT TRANSFER CARDS (Uluwatu template, Soori tokens) ---------- */
+.vip-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:34px}
+.vip-card{border:1px solid var(--hairline);background:#fff;display:flex;flex-direction:column}
+.vip-photo{height:230px;overflow:hidden}
+.vip-photo img{width:100%;height:100%;object-fit:cover}
+.vip-body{padding:clamp(26px,3vw,34px);display:flex;flex-direction:column;flex:1}
+.vip-tag{align-self:flex-start;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);background:var(--stone);padding:7px 12px;margin-bottom:18px;font-weight:500}
+.vip-card h3{font-size:26px;margin-bottom:8px}
+.vip-note{font-size:15px;color:var(--text-soft);margin-bottom:20px}
+.vip-price{margin-top:auto;border-top:1px solid var(--hairline);padding-top:16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.vip-price .price-label{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-soft)}
+.vip-price strong{font-family:var(--serif);font-size:24px;color:var(--charcoal);font-weight:600}
+.vip-cta{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;height:46px;margin-top:18px;background:#d9c9a3;border:1px solid #c4ad78;border-radius:999px;color:#4c4432;font-size:15px;font-weight:500;letter-spacing:.01em;transition:background-color .3s ease,border-color .3s ease}
+.vip-cta:hover{background:#d0bd8f;border-color:#b39d68;color:#4c4432}
+.tr-enquire{display:flex;justify-content:center;margin-top:36px}
+.tr-enquire a{display:inline-flex;align-items:center;gap:9px;height:46px;padding:0 28px;border:1px solid #c4ad78;border-radius:999px;background:transparent;color:#8a6f3f;font-size:15px;font-weight:500;transition:background-color .3s ease,color .3s ease}
+.tr-enquire a:hover{background:#d9c9a3;color:#4c4432}
+@media (max-width:760px){.vip-grid{grid-template-columns:1fr}}
+.note{margin-top:30px;background:var(--stone);padding:24px 28px}
+.note h4{font-size:20px;margin-bottom:6px}
+.note p{font-size:15px;margin:0}
+.note p+p{margin-top:8px}
+.note--petal{display:flex;gap:24px;align-items:center}
+.note--petal .petal-img{width:190px;aspect-ratio:3/2;object-fit:cover;flex:0 0 auto}
+@media (max-width:640px){.note--petal{flex-direction:column;align-items:flex-start}.note--petal .petal-img{width:100%}}
+
+/* ---------- DEPARTURE POINT (Soori square tile pattern) ---------- */
+.loc-card{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:1px solid var(--hairline);margin-top:56px}
+.lc-photo{position:relative;overflow:hidden;background:var(--stone);aspect-ratio:1/1}
+.lc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;filter:grayscale(40%);transition:filter .3s ease}
+.lc-photo:hover img{filter:grayscale(0)}
+.pin{position:absolute;z-index:2;top:16px;left:16px;background:var(--sage);color:#fff;font-family:var(--serif);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:7px 13px;font-weight:600}
+.lc-body{padding:80px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.lc-region{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--sage);margin-bottom:10px}
+.lc-body h3{font-size:30px;line-height:40px;margin-bottom:16px}
+.lc-body>p{font-size:16px;margin-bottom:22px}
+.lc-legs{list-style:none;display:grid;grid-template-columns:repeat(2,auto);gap:8px 34px;margin-bottom:22px;justify-content:center;text-align:left}
+.lc-legs li{display:flex;align-items:baseline;gap:10px;font-size:15px;color:var(--text)}
+.lc-legs b{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--charcoal);min-width:62px}
+.lc-coords{display:flex;gap:10px;align-items:center;justify-content:center;font-size:14px;color:var(--text-soft);margin-bottom:24px}
+.lc-coords svg{flex:none;color:var(--sage)}
+.dir-link{display:inline-flex;align-items:center;justify-content:center;width:230px;height:47px;border:1px solid var(--btn-border);color:var(--charcoal);font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:var(--t-btn);white-space:nowrap}
+.dir-link:hover{background:var(--sage-hover);border-color:var(--sage-hover);color:#fff}
+.dir-link svg{display:none}
+@media (max-width:1100px){.lc-body{padding:60px}}
+@media (max-width:980px){.loc-card{grid-template-columns:1fr}.lc-photo{aspect-ratio:16/9}}
+@media (max-width:768px){.lc-body{padding:35px 24px}}
+
+/* ---------- ADD-ONS ---------- */
+.addons-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:50px}
+.addon{background:#fff;border:1px solid var(--hairline);display:flex;flex-direction:column;text-align:center}
+.addon-photo{aspect-ratio:16/9;overflow:hidden;background:var(--stone)}
+.addon-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(40%);transition:filter .3s ease}
+.addon:hover .addon-photo img{filter:grayscale(0)}
+.addon-body{padding:30px 28px 32px;display:flex;flex-direction:column;flex:1;align-items:center}
+.addon .where{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--sage);margin-bottom:8px}
+.addon h3{font-size:24px;line-height:1.3;margin-bottom:0}
+.addon h3::after{content:"";display:block;width:40px;height:1px;background:var(--sage);margin:14px auto 18px}
+.addon ul{list-style:none;margin-bottom:20px;width:100%;text-align:left}
+.addon ul li{font-size:15px;color:var(--text);padding:8px 0 8px 18px;position:relative;border-bottom:1px solid var(--hairline);line-height:1.5}
+.addon ul li:last-child{border-bottom:0}
+.addon ul li::before{content:"";position:absolute;left:0;top:19px;width:8px;height:1px;background:var(--sage)}
+.addon .price{margin-top:auto;padding-top:16px;border-top:1px solid var(--hairline);font-size:14px;width:100%;line-height:1.4}
+.addon .price b{display:block;font-family:var(--serif);font-size:26px;font-weight:500;color:var(--sage);margin-top:4px}
+
+/* ---------- FLEET ---------- */
+.fleet-block{margin-top:60px}
+.fleet-block.rev{padding-top:60px;border-top:1px solid var(--hairline)}
+.fleet-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,4.5vw,64px);align-items:center}
+.fleet-block.rev .fleet-gallery{order:-1}
+.fleet-info h3{font-size:30px;line-height:40px;margin-bottom:6px}
+.fleet-info .reg{font-size:14px;color:var(--text-soft);margin-bottom:24px}
+.spec{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--hairline)}
+.spec .k{display:flex;align-items:center;gap:10px;color:var(--text);font-size:15px}
+.spec .k svg{color:var(--sage)}
+.spec .v{color:var(--charcoal);font-size:16px;text-align:right}
+.spec-note{font-size:13px;margin-top:14px}
+.fleet-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fleet-gallery img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(40%);transition:filter .3s ease}
+.fleet-gallery img:hover{filter:grayscale(0)}
+
+/* ---------- CONTACT (bone band, hairline-framed, footer figures) ---------- */
+.contact{position:relative;background:var(--bone);color:var(--charcoal);overflow:hidden;border-top:1px solid var(--hairline)}
+.contact-grid{position:relative;z-index:2;padding:120px 0}
+.contact-left{max-width:560px}
+.contact h2{color:var(--sage);font-size:39px;line-height:45px;margin-bottom:0}
+.contact h2::after{content:"";display:block;width:40px;height:1px;background:var(--sage);margin:20px 0}
+.contact .sub{margin-bottom:34px;max-width:52ch;font-size:17px}
+.c-block h4{font-size:15px;font-weight:600;margin-bottom:14px}
+.c-rows{display:flex;flex-direction:column;gap:12px}
+.c-item{display:inline-flex;align-items:center;gap:14px;color:var(--charcoal);font-family:var(--serif);font-size:30px;font-weight:500;line-height:1.1;transition:color .3s ease;width:fit-content}
+.c-item:hover{color:var(--sage)}
+.c-item .ic{width:40px;height:40px;border:1px solid var(--hairline);display:grid;place-items:center;flex:0 0 auto;color:var(--sage);background:#fff}
+.c-item small{display:block;font-family:var(--sans);font-size:14px;color:var(--text-soft);font-weight:400;margin-top:4px}
+.contact-right{position:absolute;top:0;right:0;width:38%;height:100%;z-index:1;border-left:1px solid var(--hairline)}
+.contact-right img{width:100%;height:100%;object-fit:cover;filter:grayscale(40%);transition:filter .3s ease}
+.contact-right:hover img{filter:grayscale(0)}
+.footbar{position:relative;z-index:2;background:#fff;border-top:1px solid var(--hairline);padding:22px 0}
+.footbar .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--text-soft)}
+
+/* ---------- FLOATING WHATSAPP (square, sage) ---------- */
+.wa-float{position:fixed;right:15px;bottom:15px;z-index:150;display:flex;align-items:center;gap:10px;background:var(--sage);color:#fff;height:47px;padding:0 20px;font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:background-color .3s ease}
+.wa-float:hover{background:var(--sage-hover)}
+.wa-icon{width:20px;height:20px;flex:0 0 auto}
+.wa-icon svg{width:100%;height:100%}
+
+/* ---------- REVEAL (opacity fade only — no transforms in this system) ---------- */
+.js .reveal{opacity:0;transition:opacity .7s ease}
+.js .reveal.in{opacity:1}
+.js .reveal.d1{transition-delay:.1s}.js .reveal.d2{transition-delay:.2s}.js .reveal.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transition:none}
+  *{transition-duration:.01ms!important}
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1100px){
+  .section{padding:80px 0}
+  .contact-grid{padding:80px 0}
+  h2.title,.contact h2{font-size:37px;line-height:44px}
+  .lead{font-size:16px;line-height:27px}
+  nav.links a{padding:0 9px;font-size:16px}
+}
+@media (max-width:980px){
+  .addons-grid{grid-template-columns:1fr}
+  .pills .container{grid-template-columns:repeat(3,1fr)}
+  .pill{padding:20px 12px}
+  .pill+.pill{border-left:none}
+  .pill:not(:nth-child(3n+1)){border-left:1px solid var(--hairline-a)}
+  .pill:nth-child(n+4){border-top:1px solid var(--hairline-a)}
+  .fleet-grid{grid-template-columns:1fr;gap:34px}
+  .fleet-block.rev .fleet-gallery{order:0}
+  .contact-right{display:none}
+  .contact-left{max-width:none}
+}
+@media (max-width:768px){
+  .section{padding:60px 0}
+  .contact-grid{padding:60px 0}
+  h2.title,.contact h2{font-size:29px;line-height:36px}
+  .lead{font-size:15px}
+  .hero{min-height:70vh}
+  .hero h1{font-size:24px;line-height:1.3}
+}
+@media (max-width:760px){
+  header.nav{position:relative}
+  .nav-inner{height:55px}
+  .lockup{padding-right:16px}
+  .lockup .partner .n{font-size:18px;letter-spacing:.16em}
+  .lockup .partner .s{font-size:8px;letter-spacing:.22em}
+  nav.links{
+    position:absolute;top:100%;left:0;right:0;background:var(--sage);flex-direction:column;
+    gap:0;padding:0;max-height:0;overflow:hidden;transition:max-height .35s ease;z-index:5;
+  }
+  nav.links.mobile-open{max-height:480px}
+  nav.links a{color:#fff!important;line-height:70px;padding:0 26px;width:100%;text-align:center;border-bottom:1px solid rgba(255,255,255,.2);transition:background-color .5s ease}
+  nav.links a:hover{background:var(--sage-hover)}
+  .lang-switch{margin-left:auto;padding:0 14px;font-size:15px}
+  .burger{display:flex}
+  .nav-cta{display:none}
+  .pills .container{grid-template-columns:repeat(2,1fr)}
+  .pill:not(:nth-child(3n+1)){border-left:none}
+  .pill:nth-child(even){border-left:1px solid var(--hairline-a)}
+  .pill:nth-child(n+3){border-top:1px solid var(--hairline-a)}
+  table.tf th,table.tf td{padding-left:18px;padding-right:18px}
+  .wa-label{display:none}
+  .wa-float{width:47px;padding:0;justify-content:center}
+}
+@media (max-width:560px){
+  .section{padding:40px 0}
+  .contact-grid{padding:40px 0}
+  .tours-slides{grid-template-columns:1fr}
+  .btn{min-width:0;width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="lockup" aria-label="Soori Bali helicopter experiences — home">
+      <span class="partner"><span class="n">SOORI</span><span class="s">HELICOPTER EXPERIENCES · BALI</span></span>
+    </a>
+    <nav class="links" id="navlinks">
+      <a href="#tours">Scenic Flights</a>
+      <a href="#transfers">Transfers</a>
+      <a href="#addons">Picnics</a>
+      <a href="#departure">Departure Point</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="index-zh.html" class="lang-switch" lang="zh-CN" hreflang="zh-CN">中文</a>
+    <a href="https://wa.me/628113858529" target="_blank" rel="noopener" class="nav-cta">Enquire</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg" aria-label="Aerial footage of Bali filmed from a helicopter">
+      <source src="images/hero.webm" type="video/webm" />
+      <source src="images/hero.mp4" type="video/mp4" />
+    </video>
+    <img class="hero-fallback" src="images/hero-poster.jpg" alt="Aerial view of the Bali coastline from a helicopter" />
+  </div>
+  <div class="container hero-inner">
+    <p class="kicker reveal in">Soori Bali <b>·</b> Helicopter Experiences</p>
+    <h1 class="reveal in d1">The Sky is<br/>Our Canvas</h1>
+    <p class="sub reveal in d2">Private helicopter tours and seamless transfers for guests of Soori Bali — Bali from above, tailored to your stay.</p>
+    <div class="hero-actions reveal in d3">
+      <a href="#tours" class="btn btn-primary">See the Four Routes
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#transfers" class="btn btn-ghost">Transfer Rates</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><div class="mouse"></div>Scroll</div>
+</section>
+
+<!-- ===== PILLS (verbatim from the catalogue) ===== -->
+<section class="pills">
+  <div class="container">
+    <div class="pill"><b>Brand-new</b>helicopter fleet</div>
+    <div class="pill"><b>International</b>safety standards</div>
+    <div class="pill"><b>World-class</b>professional pilots</div>
+    <div class="pill"><b>Landing options</b>at any location</div>
+    <div class="pill"><b>Best price</b>guarantee</div>
+  </div>
+</section>
+
+<!-- ===== TOURS ===== -->
+<section class="section" id="tours">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Helicopter Tours · from Soori</span>
+      <h2 class="title">Choose Your Route</h2>
+      <p class="lead">Four signature routes, each a private charter for up to four guests — from a fifteen-minute glide down the Tanah Lot coast to a fifty-five-minute crossing to Nusa Penida or the volcano.</p>
+    </div>
+
+    <div class="tours-slides">
+      <figure class="tour-slide reveal">
+        <img src="images/tour-page-coastal.jpg" alt="The Coastal Prelude — 15 minutes, private charter IDR 19,899,000" loading="lazy" decoding="async" />
+        <a class="tour-cta" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20book%20The%20Coastal%20Prelude%20%2815%20minutes%20%E2%80%94%20IDR%2019%2C899%2C000%2C%20private%20charter%29.%20Could%20you%20let%20me%20know%20the%20next%20available%20times%3F" target="_blank" rel="noopener">Enquire about this tour<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </figure>
+      <figure class="tour-slide reveal d1">
+        <img src="images/tour-page-uluwatu.jpg" alt="Southern Cliffs & Temples — 40 minutes, private charter IDR 35,899,000" loading="lazy" decoding="async" />
+        <a class="tour-cta" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20book%20Southern%20Cliffs%20%26%20Temples%20%2840%20minutes%20%E2%80%94%20IDR%2035%2C899%2C000%2C%20private%20charter%29.%20Could%20you%20let%20me%20know%20the%20next%20available%20times%3F" target="_blank" rel="noopener">Enquire about this tour<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </figure>
+      <figure class="tour-slide reveal d2">
+        <img src="images/tour-page-penida.jpg" alt="The Nusa Wild Isles — 55 minutes, private charter IDR 47,599,000" loading="lazy" decoding="async" />
+        <a class="tour-cta" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20book%20The%20Nusa%20Wild%20Isles%20%2855%20minutes%20%E2%80%94%20IDR%2047%2C599%2C000%2C%20private%20charter%29.%20Could%20you%20let%20me%20know%20the%20next%20available%20times%3F" target="_blank" rel="noopener">Enquire about this tour<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </figure>
+      <figure class="tour-slide reveal">
+        <img src="images/tour-page-volcano.jpg" alt="Volcano & Emerald Highlands — 55 minutes, private charter IDR 47,599,000" loading="lazy" decoding="async" />
+        <a class="tour-cta" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20book%20Volcano%20%26%20Emerald%20Highlands%20%2855%20minutes%20%E2%80%94%20IDR%2047%2C599%2C000%2C%20private%20charter%29.%20Could%20you%20let%20me%20know%20the%20next%20available%20times%3F" target="_blank" rel="noopener">Enquire about this tour<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </figure>
+    </div>
+
+    <p class="tours-note">All rates are for a private charter — the entire helicopter reserved exclusively for your party of up to 4 guests. Tap any route to enlarge it.</p>
+  </div>
+</section>
+
+<!-- ===== TRANSFERS ===== -->
+<section class="section section--soft" id="transfers">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Helicopter Transfers</span>
+      <h2 class="title">Arrive by Air</h2>
+      <p class="lead">Skip the traffic entirely. Private helicopter transfers from the Soori lawn — to the airport, across the island, or out to the islands beyond.</p>
+    </div>
+
+    <div class="vip-grid reveal">
+      <div class="vip-card">
+        <div class="vip-photo"><img src="images/transfer-benoa.jpeg" alt="The sweeping roofline of Ngurah Rai International Airport" loading="lazy" decoding="async" /></div>
+        <div class="vip-body">
+          <span class="vip-tag">Airport Transfer &middot; via Benoa</span>
+          <h3>Soori &mdash; Benoa</h3>
+          <p class="vip-note">15 minutes on board &middot; car transfer from or to the airport included</p>
+          <div class="vip-price"><span class="price-label">Private &middot; per helicopter, up to 4 guests</span><strong>IDR 29,899,000</strong></div>
+          <a class="vip-cta" target="_blank" rel="noopener" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20book%20the%20Airport%20Transfer%20via%20Benoa%20%2815%20minutes%20on%20board%20%E2%80%94%20IDR%2029%2C899%2C000%2C%20car%20transfer%20included%29.%20Could%20you%20let%20me%20know%20what%27s%20available%3F">Book a Flight <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="vip-card">
+        <div class="vip-photo"><img src="images/transfer-airport.jpeg" alt="A helicopter hovering at Ngurah Rai International Airport, guided in by a marshaller" loading="lazy" decoding="async" /></div>
+        <div class="vip-body">
+          <span class="vip-tag">Airport Transfer &middot; direct</span>
+          <h3>Soori &mdash; Ngurah Rai</h3>
+          <p class="vip-note">15 minutes on board &middot; direct to Ngurah Rai International Airport, car transfer included</p>
+          <div class="vip-price"><span class="price-label">Private &middot; per helicopter, up to 4 guests</span><strong>IDR 53,899,000</strong></div>
+          <a class="vip-cta" target="_blank" rel="noopener" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20book%20the%20direct%20Airport%20Transfer%20to%20Ngurah%20Rai%20%2815%20minutes%20on%20board%20%E2%80%94%20IDR%2053%2C899%2C000%2C%20car%20transfer%20included%29.%20Could%20you%20let%20me%20know%20what%27s%20available%3F">Book a Flight <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tf-wrap reveal">
+      <div class="tf-scroll">
+        <table class="tf">
+          <caption>Special Soori private transfer rate</caption>
+          <thead>
+            <tr><th scope="col">Route</th><th scope="col">Flight time</th><th scope="col" class="r">Rate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="route">Soori &ndash; Jatiluwih Ecofarm</td><td class="time">10 mins</td><td class="rate r">IDR 28,199,000</td></tr>
+            <tr><td class="route">Soori &ndash; Kuber Ubud</td><td class="time">12 mins</td><td class="rate r">IDR 29,699,000</td></tr>
+            <tr><td class="route">Soori &ndash; Viceroy Ubud</td><td class="time">12 mins</td><td class="rate r">IDR 31,999,000</td></tr>
+            <tr><td class="route">Soori &ndash; Nusa Dua</td><td class="time">15 mins</td><td class="rate r">IDR 26,399,000</td></tr>
+            <tr><td class="route">Soori &ndash; Bubble Hotel</td><td class="time">20 mins</td><td class="rate r">IDR 35,399,000</td></tr>
+            <tr><td class="route">Soori &ndash; Nusa Lembongan</td><td class="time">20 mins</td><td class="rate r">IDR 38,999,000</td></tr>
+            <tr><td class="route">Soori &ndash; Kelingking Penida</td><td class="time">30 mins</td><td class="rate r">IDR 47,799,000</td></tr>
+            <tr><td class="route">Soori &ndash; Semaya Penida</td><td class="time">35 mins</td><td class="rate r">IDR 55,099,000</td></tr>
+            <tr><td class="route">Soori &ndash; Gili Trawangan</td><td class="time">45 mins</td><td class="rate r">IDR 70,199,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tr-enquire reveal"><a target="_blank" rel="noopener" href="https://wa.me/628113858529?text=Hi%21%20I%27m%20staying%20at%20Soori%20and%20I%27d%20like%20to%20arrange%20a%20helicopter%20transfer.%20Could%20you%20send%20me%20the%20details%20and%20availability%3F">Enquire about a transfer <span aria-hidden="true">&rarr;</span></a></div>
+
+  </div>
+</section>
+
+<!-- ===== PICNIC ADD-ONS ===== -->
+<section class="section" id="addons">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Picnic Add-Ons</span>
+      <h2 class="title">Land Somewhere Worth Staying</h2>
+      <p class="lead">Add a private picnic to any tour flying above the location, or to a custom tour by request. Each package includes the helicopter landing fee and one hour of waiting time, set up for two guests.</p>
+    </div>
+
+    <div class="addons-grid">
+
+      <article class="addon reveal">
+        <div class="addon-photo"><img src="images/picnic-jatiluwih.jpg" alt="Picnic deck above the Jatiluwih rice terraces, helicopter parked beyond" loading="lazy" decoding="async" /></div>
+        <div class="addon-body">
+        <p class="where">Jatiluwih · Tabanan</p>
+        <h3>Picnic at Jatiluwih Eco Farm</h3>
+        <ul>
+          <li>Rice-terrace-view picnic set-up for 2</li>
+          <li>Green salad · creamy tomato soup · beef steak</li>
+          <li>Chocolate brownies</li>
+          <li>Glass of wine, water, tea or coffee</li>
+          <li>Landing fee &amp; 1 hour waiting time included</li>
+        </ul>
+        <p class="price">Special price · incl. tax &amp; service<b>IDR 16,000,000</b></p>
+        </div>
+      </article>
+
+      <article class="addon reveal d1">
+        <div class="addon-photo"><img src="images/picnic-bubble.jpg" alt="Beach picnic under white Balinese umbrellas at Nyang Nyang" loading="lazy" decoding="async" /></div>
+        <div class="addon-body">
+        <p class="where">Nyang Nyang Beach · Pecatu</p>
+        <h3>Picnic at Bubble Hotel</h3>
+        <ul>
+          <li>Bubble Garden old-school picnic set-up for 2</li>
+          <li>Sparkling, ros&eacute;, white or red wine — French champagne upgrade available</li>
+          <li>Charcuterie board · garden salad</li>
+          <li>Seasonal fruit plate · cupcakes &amp; hot cocoa</li>
+          <li>Landing fee &amp; 1 hour waiting time included</li>
+        </ul>
+        <p class="price">Special price · incl. tax &amp; service<b>IDR 20,000,000</b></p>
+        </div>
+      </article>
+
+      <article class="addon reveal d2">
+        <div class="addon-photo"><img src="images/picnic-semaya.jpg" alt="Seaside picnic spread on the Nusa Penida coast" loading="lazy" decoding="async" /></div>
+        <div class="addon-body">
+        <p class="where">Suana · Nusa Penida</p>
+        <h3>Picnic at Semaya Resort</h3>
+        <ul>
+          <li>Penida beach-view picnic set-up for 2</li>
+          <li>Mediterranean sandwich · beef burrito · tuna Nicoise sandwich</li>
+          <li>Lebanese fattoush salad · charcuterie cured meat</li>
+          <li>Fresh whole fruits · crackers · beverage</li>
+          <li>Landing fee &amp; 1 hour waiting time included</li>
+        </ul>
+        <p class="price">Special price · incl. tax &amp; service<b>IDR 20,000,000</b></p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="note note--petal reveal d1">
+      <img class="petal-img" src="images/petals.jpg" alt="A flower-petal message reading Will You Marry Me on a beach, seen from the air" loading="lazy" decoding="async" />
+      <div>
+        <h4>Flower petal arrangement</h4>
+        <p>Add a custom flower-petal message on the ground — your own wording, 10 to 15 letters, revealed from the air. Made for proposals, anniversaries, birthdays and special occasions. From IDR 2,500,000.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPARTURE POINT ===== -->
+<section class="section section--soft" id="departure">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Where Your Journey Starts</span>
+      <h2 class="title">The Lawn Above The Sea</h2>
+      <p class="lead">Every tour and every transfer on this page lifts off from Soori itself — no drive to a heliport, no terminal, no gate.</p>
+    </div>
+
+    <div class="loc-card reveal">
+      <div class="lc-photo">
+        <span class="pin">Your departure point</span>
+        <img src="images/soori-lawn.jpg" alt="The circular departure lawn at Soori, between the resort gardens and the black sand of Kelating Beach" loading="lazy" decoding="async" />
+      </div>
+      <div class="lc-body">
+        <div class="lc-region">Kelating &middot; Tabanan &middot; Bali</div>
+        <h3>Soori Bali</h3>
+        <p>A circular lawn set between the gardens and the black sand of Kelating Beach. You board at the resort, and the coastline is beneath you within the first minute.</p>
+        <ul class="lc-legs">
+          <li><b>10 min</b> Jatiluwih</li>
+          <li><b>12 min</b> Ubud</li>
+          <li><b>15 min</b> Ngurah Rai Airport</li>
+          <li><b>20 min</b> Nusa Lembongan</li>
+          <li><b>30 min</b> Nusa Penida</li>
+          <li><b>45 min</b> Gili Trawangan</li>
+        </ul>
+        <div class="lc-coords">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>8&deg;34&#39;34.8&quot;S &middot; 115&deg;03&#39;11.6&quot;E</span>
+        </div>
+        <a class="dir-link" target="_blank" rel="noopener" href="https://maps.app.goo.gl/TfaHmVT8wxmV1j9H7">Open in Google Maps<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLEET ===== -->
+<section class="section" id="fleet">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">The Fleet</span>
+      <h2 class="title">The Right Aircraft for Every Journey</h2>
+      <p class="lead">Four aircraft, every one delivered factory-fresh and maintained to international aviation standards, flown under an Indonesian Air Operator Certificate.</p>
+    </div>
+
+    <!-- Robinson R66 -->
+    <div class="fleet-block reveal">
+      <div class="fleet-grid">
+        <div class="fleet-info">
+          <h3>Robinson R66</h3>
+          <div class="reg">PK-VPN (2022) · PK-VPX (2023) · PK-VPY (2025)</div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Cruise Speed</span><span class="v">Up to 110 kn (204 km/h)</span></div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18"/></svg>Max Range</span><span class="v">≈ 350 nm (650 km)</span></div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M2 21a7 7 0 0 1 14 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 21a5 5 0 0 1 6 0"/></svg>Capacity</span><span class="v">1 pilot + up to 4 guests</span></div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Baggage</span><span class="v">18 ft³ · 300 lb / 136 kg</span></div>
+          <p class="spec-note">*Subject to configuration and payload.</p>
+        </div>
+        <div class="fleet-gallery">
+          <img loading="lazy" decoding="async" src="images/r66-1.jpeg" alt="Robinson R66 on the helipad" />
+          <img loading="lazy" decoding="async" src="images/r66-2.jpeg" alt="Robinson R66 in flight" />
+          <img loading="lazy" decoding="async" src="images/r66-3.jpeg" alt="Aviation headset in the R66 cabin" />
+          <img loading="lazy" decoding="async" src="images/r66-4.jpeg" alt="Robinson R66 cockpit" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bell 505 -->
+    <div class="fleet-block rev reveal">
+      <div class="fleet-grid">
+        <div class="fleet-info">
+          <h3>Bell 505</h3>
+          <div class="reg">PK-DJG (2024)</div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>Cruise Speed</span><span class="v">125 kn (231 km/h)</span></div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18"/></svg>Max Range</span><span class="v">306 nm (567 km)</span></div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M2 21a7 7 0 0 1 14 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 21a5 5 0 0 1 6 0"/></svg>Capacity</span><span class="v">1 pilot + up to 4 guests</span></div>
+          <div class="spec"><span class="k"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Baggage</span><span class="v">288 kg</span></div>
+          <p class="spec-note">*Subject to configuration and payload.</p>
+        </div>
+        <div class="fleet-gallery">
+          <img loading="lazy" decoding="async" src="images/bell-1.jpeg" alt="Bell 505 side profile" />
+          <img loading="lazy" decoding="async" src="images/bell-2.jpeg" alt="Bell 505 front view" />
+          <img loading="lazy" decoding="async" src="images/bell-3.jpeg" alt="Bell 505 cabin seating" />
+          <img loading="lazy" decoding="async" src="images/bell-4.jpeg" alt="Bell 505 glass cockpit avionics" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-left">
+      <span class="eyebrow">Contact</span>
+      <h2>Arrange Your Flight</h2>
+      <p class="sub">Scenic routes, transfers, picnic add-ons and private charter are arranged through the Soori concierge on WhatsApp. Send the date, the party size and the route — you will receive the slots available that day.</p>
+
+      <div class="c-block">
+        <h4>Soori concierge</h4>
+        <div class="c-rows">
+          <a class="c-item" target="_blank" rel="noopener" href="https://wa.me/628113858529">
+            <span class="ic" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg></span>
+            <span>+62 811 3858 529<small>WhatsApp · daily</small></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-right"><img loading="lazy" decoding="async" src="images/soori-cabin.jpg" alt="Passenger photographing Nusa Lembongan and Mount Agung from the helicopter cabin" /></div>
+</section>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a class="wa-float" href="https://wa.me/628113858529" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <span class="wa-label">Chat with us</span>
+  <span class="wa-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.892c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652a12.062 12.062 0 005.71 1.447h.006c6.585 0 11.946-5.335 11.949-11.896C24 8.552 22.759 5.652 20.52 3.45"/></svg></span>
+</a>
+
+<!-- ===== ROUTE LIGHTBOX ===== -->
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <img id="lbImg" alt="Full tour page from the catalogue — photo, description, highlights, route map and price" />
+</div>
+
+<script>
+// Hero video: reveal once it can play, so the poster covers the load
+(function(){ var v = document.querySelector('.hero-bg video'); if(!v) return;
+  var show = function(){ v.classList.add('ready'); };
+  if (v.readyState >= 3) show(); else v.addEventListener('canplay', show, {once:true});
+  setTimeout(show, 4000); })();  // never leave it hidden
+
+// Route-map lightbox: click a tour map to see the full catalogue section
+var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbClose = document.getElementById('lbClose');
+function lbOpen(src){ lbImg.src = src; lb.classList.add('open'); document.body.classList.add('lb-lock'); lb.scrollTop = 0; }
+function lbHide(){ lb.classList.remove('open'); document.body.classList.remove('lb-lock'); }
+document.querySelectorAll('.tour-slide img').forEach(function(i){
+  i.addEventListener('click', function(){ lbOpen(i.getAttribute('src')); });
+});
+lbClose.addEventListener('click', lbHide);
+lb.addEventListener('click', function(e){ if(e.target===lb) lbHide(); });
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') lbHide(); });
+
+// Nav scroll state
+var nav = document.getElementById('nav');
+function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 60); }
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+// Mobile menu
+var burger = document.getElementById('burger');
+var navlinks = document.getElementById('navlinks');
+burger.addEventListener('click', function(){
+  var open = navlinks.classList.toggle('mobile-open');
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+navlinks.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click', function(){
+    navlinks.classList.remove('mobile-open');
+    burger.setAttribute('aria-expanded','false');
+  });
+});
+
+// Reveal on scroll — enhancement only; content is visible without JS
+if ('IntersectionObserver' in window) {
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+}
+</script>
+</body>
+</html>
